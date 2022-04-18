@@ -1,0 +1,17 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">Recruitment Tracker</a>
+    <button class="btn btn-success my-2 my-sm-0" type="button" (click)="buttonClick()" *ngIf="!loggedIn">Login</button>
+    <button class="btn btn-outline-danger my-2 my-sm-0" type="button" (click)="buttonClick()" *ngIf="loggedIn">Logout</button>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+<footer class="bg-dark text-center text-white fixed-bottom">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-light" href="#">TEAM-B</a>
+  </div>
+  <!-- Copyright -->
+</footer>

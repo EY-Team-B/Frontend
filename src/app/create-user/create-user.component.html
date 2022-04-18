@@ -1,0 +1,62 @@
+<form>
+  <div class="main">
+    <div class="col-md-6 offset-md-3">
+      <h2>CREATE USER</h2>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label><b>Name :</b> </label>
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="user.name"
+            id="name"
+            name="name"
+          />
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label><b>Department :</b></label>
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="user.department"
+            id="department"
+            name="depatment"
+          />
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label> <b>Email Id :</b></label>
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="user.email"
+            id="email"
+            name="email"
+          />
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label> <b>Designation :</b></label
+          >&nbsp;&nbsp;&nbsp;&nbsp;
+          <select
+            name="designation"
+            [(ngModel)]="user.designation"
+            id="designation"
+          >
+            <option *ngFor="let i of user.designation">
+              {{ i }}
+            </option>
+          </select>
+        </div>
+        <br />
+
+        <button class="btn btn-success" type="submit">Submit</button
+        ><br /><br />
+      </form>
+    </div>
+  </div>
+</form>
