@@ -11,7 +11,11 @@ import { FormsModule } from '@angular/forms';
 import { UpdateUserComponent } from './update-user/update-user.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ManagerComponent } from './manager/manager.component';
-import { AngularFileUploaderModule } from "angular-file-uploader";
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ReportsComponent } from './reports/reports.component';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+import { TeammatesComponent } from './teammates/teammates.component';
+
 
 @NgModule({
   declarations: [
@@ -23,8 +27,10 @@ import { AngularFileUploaderModule } from "angular-file-uploader";
     UpdateUserComponent,
     PageNotFoundComponent,
     ManagerComponent,
+    ReportsComponent,
+    TeammatesComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, AngularFileUploaderModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, PdfViewerModule, NgxExtendedPdfViewerModule ],
   providers: [],
   bootstrap: [AppComponent],
 })

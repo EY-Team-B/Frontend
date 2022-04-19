@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-manager',
@@ -6,17 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./manager.component.css']
 })
 export class ManagerComponent implements OnInit {
-
-  afuConfig = {
-    uploadAPI: {
-      url:"https://example-file-upload-api"
+  title = 'recruitment-tracker-app';
+  loggedIn = false;
+  constructor(private router: Router) { }
+  buttonClick() {
+    this.loggedIn = !this.loggedIn;
+    if (this.loggedIn == true) {
+      this.router.navigate(['report']);
     }
-};
-
-  constructor() { }
+    else{
+      this.router.navigate(['']);
+    }
+  }
 
   ngOnInit(): void {
-    
   }
 
 }
