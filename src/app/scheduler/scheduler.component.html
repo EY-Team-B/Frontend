@@ -1,0 +1,32 @@
+<form>
+  <div class="head">
+    <h2>SCHEDULER</h2>
+
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label><b>Timing :</b> </label>
+        <input
+          type="datetime-local"
+          class="form-control"
+          id="name"
+          name="name"
+        />
+      </div>
+
+      <div class="form-group">
+        <label><b>Interview Round :</b></label
+        ><br />
+        <select name="round" id="round">
+          <option *ngFor="let i of round">{{ i }}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label> <b>Panel :</b></label>
+        <input type="text" class="form-control" id="panel" name="panel" />
+      </div>
+
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+</form>

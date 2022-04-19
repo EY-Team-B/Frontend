@@ -1,0 +1,25 @@
+<div class="main">
+  <div class="col-md-6 offset-md-3">
+    <h2>Welcome to Recuriter Module</h2>
+
+    <button class="btn btn-secondary " type="button" (click)="createCandidate()" *ngIf="!loggedIn">
+      Create Candidate
+    </button>
+
+    <button class="btn btn-secondary " type="button" style="margin-left: 32px" (click)="viewCandidate()"
+      *ngIf="!loggedIn">
+    View Candidate
+    </button>
+
+    <button class="btn btn-secondary " type="button" style="margin-left: 32px" (click)="Schedule()">
+      Schedule Interview
+    </button>
+
+    <ul class="nav nav-pills nav-fill">
+    <li class="nav-item">
+      <a class="nav-link active" href="http://localhost:4200/report">Reports</a>
+    </li>
+  </ul>
+
+  </div>
+</div>

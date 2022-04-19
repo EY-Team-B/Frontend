@@ -1,0 +1,42 @@
+<div class="head">
+  <h2>Candidate List</h2>
+</div>
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Clgid</th>
+        <th>Email Id</th>
+        <th>Phone</th>
+        <th>Resume</th>
+        <th>Photo</th>
+        <th>Schedule</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let candidate of candidates">
+        <td>{{ candidate.id }}</td>
+
+        <td>{{ candidate.name }}</td>
+        <td>{{ candidate.clgid }}</td>
+
+        <td>{{ candidate.email }}</td>
+        <td>{{ candidate.phone }}</td>
+
+        <td>{{ candidate.resume }}</td>
+        <td>{{ candidate.photo }}</td>
+
+        <td>
+          
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="nav-link active" href="http://localhost:4200/scheduler">Schedule</a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

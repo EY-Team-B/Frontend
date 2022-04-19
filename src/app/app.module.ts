@@ -15,6 +15,10 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ReportsComponent } from './reports/reports.component';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { TeammatesComponent } from './teammates/teammates.component';
+import { RecruiterComponent } from './recruiter/recruiter.component';
+import { SchedulerComponent } from './scheduler/scheduler.component';
+import { CandidateListComponent } from './candidate-list/candidate-list.component';
+import { CreateCandidateComponent } from './create-candidate/create-candidate.component';
 
 
 @NgModule({
@@ -29,6 +33,10 @@ import { TeammatesComponent } from './teammates/teammates.component';
     ManagerComponent,
     ReportsComponent,
     TeammatesComponent,
+    RecruiterComponent,
+    SchedulerComponent,
+    CandidateListComponent,
+    CreateCandidateComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, PdfViewerModule, NgxExtendedPdfViewerModule ],
   providers: [],
