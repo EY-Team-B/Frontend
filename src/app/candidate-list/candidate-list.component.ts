@@ -8,7 +8,9 @@ import { Candidate } from '../create-candidate/candidate';
 })
 export class CandidateListComponent implements OnInit {
   candidates!: Candidate[];
-  onClick(id: number) {}
+  onClick(id: number) {
+    
+  }
   constructor() {}
 
   ngOnInit(): void {
